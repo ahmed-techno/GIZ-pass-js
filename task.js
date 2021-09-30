@@ -1,13 +1,5 @@
-let numbers = [
-    5,
-    8,
-    0,
-    1,
-    9,
-    11,
-    15,
-    16
-];
+var fs = require('fs');
+var numbers = fs.readFileSync("./data.txt", 'utf-8');
 
 console.log("Original numbers list: ", numbers)
 
