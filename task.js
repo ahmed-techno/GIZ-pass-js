@@ -24,6 +24,8 @@ for(var j = 0; j < ( arr.length - i -1 ); j++){
 }
 }
 
+	
+	
 // Print the sorted array
  console.log(arr);
 }
