@@ -1,36 +1,21 @@
 var fs = require('fs');
-var numbers = fs.readFileSync("./data.txt", 'utf-8');
+var arr_numbers = fs.readFileSync("./data.txt", 'utf-8');
 
 console.log("Original numbers list: ", numbers)
 
-for(let i = 0 ; i < numbers.length ; i++)
-{
-    for(let j = 0 ; j < numbers.length - 1 ; j++)
-    {
-        if(numbers[i] > numbers[j + 1])
-        {
-            let temp = numbers[j];
-            numbers[j] = numbers[j + 1]
-            numbers[j + 1] = temp;
-        }
-    }
+function bubbleSort(arr_numbers){
+for(var i = 0; i < arr_numbers.length; i++){
+for(var j = 0; j < ( arr_numbers.length - i -1 ); j++){
+	 
+	if(arr[j] > arr_numbers[j+1]){
+	var temp = arr_numbers[j];
+	arr_numbers[j] = arr_numbers[j + 1];
+	arr_numbers[j+1] = temp;
+	}
+}
+} 
+ console.log(arr_numbers);
 }
 
-console.log("Numbers list After sorting: ", numbers)
-
-for(let i = 0 ; i < numbers.length ; i++)
-{
-    for(let j = 0 ; j < numbers.length - 1 ; j++)
-    {
-        if(numbers[i] < numbers[j + 1])
-        {
-            let temp = numbers[j];
-            numbers[j] = numbers[j + 1]
-            numbers[j + 1] = temp;
-        }
-    }
-}
-
-console.log("Numbers list After Desc sorting: ", numbers)
-
+  bubbleSort(arr_numbers)
 
