@@ -1,3 +1,4 @@
+My contribute to solve problem  at competition by
 # GIZ bootcamp
 ## Full-stack web development - JS pass task
 Task to be passed by candidates of GIZ program.
