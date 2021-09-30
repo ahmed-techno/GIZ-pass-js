@@ -19,3 +19,8 @@ for(var j = 0; j < ( arr_numbers.length - i -1 ); j++){
 
   bubbleSort(arr_numbers)
 
+fs = require('fs');
+fs.writeFile('output.txt', arr_numbers, function (err) {
+  if (err)
+   return console.log(err);
+  });
